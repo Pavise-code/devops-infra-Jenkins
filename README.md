@@ -27,7 +27,7 @@ docker rm -f $(docker ps -aq) ; docker volume rm $(docker volume ls -q)
 
 Commande a mettre dans powershell pour ajouter la base de donnée si dans l'application les options saisie-cotisation et liste-cotisation ne s'affiche pas:
 ```console
- Get-Content ./db/espacemembre.sql | docker exec -i cotisations\_db mysql -u root -prootpass EspaceMembreDB
+ Get-Content ./db/espacemembre.sql | docker exec -i cotisations_db mysql -u root -prootpass EspaceMembreDB
 ```
 
 
